@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MessageService } from './message.service';
 @Component({
   selector: 'app-root',
@@ -8,8 +7,4 @@ import { MessageService } from './message.service';
 })
 export class AppComponent {
   title = 'app';
-  constructor(
-    private http: HttpClient,
-    private messageService: MessageService) { }
-    
 }
