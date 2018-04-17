@@ -6,7 +6,10 @@ import { Item } from '../item';
   styleUrls: ['./items.component.css']
 })
 export class ItemsComponent implements OnInit {
-
+  item: Item = {
+    id: 1,
+    title: 'issues1'
+  };
   constructor() { }
 
   ngOnInit() {
