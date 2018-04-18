@@ -23,6 +23,15 @@ export class ItemService {
         catchError(this.handleError('getItems', []))
       );
   }
+    /** GET hero by id. Will 404 if id not found */
+    private itemUrl = 'https://api.github.com/repos/angular/angular/issues';
+    getItem(id: number): Observable<Item> {
+      const url = `${this.itemsUrl}/${id}`;
+      return this.http.get<Item>(url).pipe(
+        tap(_ => this.log(`fetched item id=${id}`)),
+        catchError(this.handleError<Item>(`getItem id=${id}`))
+      );
+    }
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
  
