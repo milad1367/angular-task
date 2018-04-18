@@ -1,7 +1,6 @@
-.items {
-    text-align: left;
-
-}
 .items ul li  {
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    color: black;
+   
 }
