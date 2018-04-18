@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { ItemsComponent } from './items/items.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ItemsComponent } from './items/items.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   providers: [ItemService,MessageService],
   bootstrap: [AppComponent]
