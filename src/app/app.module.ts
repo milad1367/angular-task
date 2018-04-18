@@ -8,7 +8,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { ItemsComponent } from './items/items.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatListModule
   ],
   providers: [ItemService,MessageService],
   bootstrap: [AppComponent]
