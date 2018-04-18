@@ -11,6 +11,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatCardModule} from '@angular/material/card';
     NoopAnimationsModule,
     MatListModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule,
   ],
   providers: [ItemService,MessageService],
   bootstrap: [AppComponent]

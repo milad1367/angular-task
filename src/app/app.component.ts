@@ -6,5 +6,4 @@ import { MessageService } from './message.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular task';
 }
