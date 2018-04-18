@@ -9,7 +9,7 @@ import { ItemService } from '../item.service';
 })
 export class ItemsComponent implements OnInit {
   items: Item[];
-
+  
   constructor(private itemService: ItemService) { }
 
   ngOnInit() {
@@ -17,11 +17,7 @@ export class ItemsComponent implements OnInit {
   }
   getItems(): void {
     this.itemService.getItems()
-    .subscribe(items => {this.items = items;
-                         console.log(this.items);
-                        }
-              );
-    
+    .subscribe(items => this.items = items);
   }
 
 }

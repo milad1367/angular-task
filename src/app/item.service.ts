@@ -11,7 +11,7 @@ const httpOptions = {
 };
 @Injectable()
 export class ItemService {
-  private itemsUrl = 'https://api.github.com/repos/angular/angular/issues?state=closed';  // URL to web api
+  private itemsUrl = 'https://api.github.com/repos/angular/angular/issues?state=open';  // URL to web api
   constructor(
     private http: HttpClient,
     private messageService: MessageService) { }
