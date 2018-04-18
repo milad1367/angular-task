@@ -4,7 +4,9 @@
         <ul>
             <li *ngFor="let item of items">
                 <div>
-                <h4>{{item['title']}}</h4> 
+                    <a routerLink="/detail/{{item.id}}">
+                        <h4>{{item['title']}}</h4> 
+                    </a>
                 </div>
             </li>
         </ul>

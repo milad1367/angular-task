@@ -12,12 +12,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './/app-routing.module';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
-    ItemsComponent
+    ItemsComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
