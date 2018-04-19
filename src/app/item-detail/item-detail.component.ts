@@ -3,13 +3,16 @@ import { Item } from '../item';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { ItemService }  from '../item.service';
+import { ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
-  styleUrls: ['./item-detail.component.css']
+  styleUrls: ['./item-detail.component.css'],
+  
 })
 export class ItemDetailComponent implements OnInit {
 item: Item;
+body: Text;
   constructor(
     private route: ActivatedRoute,
     private itemService: ItemService,
@@ -23,7 +26,7 @@ item: Item;
   getItem(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.itemService.getItem(id)
-      .subscribe(item => {this.item = item;console.log(item);});
+      .subscribe(item => {this.item = item;console.log(item);this.body = item['body'];});
   }
  
   goBack(): void {

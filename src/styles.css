@@ -17,3 +17,14 @@ h1 {
     color: #888;
     font-family: Cambria, Georgia;
   }
+
+button,nav a {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  background-color: #8c0774;
+  font-size: 1.2em;
+  border-radius: 10%;
+  }

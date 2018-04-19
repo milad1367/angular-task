@@ -1,4 +1,11 @@
-<div *ngIf="item">
+
+<div class="item" *ngIf="item">
+    <nav>
+        <a routerLink="/items">Home</a>
+    </nav>
     <h2>{{ item['title']}} Details</h2>
-    <div><span>id: </span>{{item['id']}}</div>  
+    <span style="color:#48c718">created by : {{item.user['login']}} at {{item['created_at']}} </span>
+    <p> {{body}} </p>
+    <button (click)="goBack()">go back</button>
+
 </div>
